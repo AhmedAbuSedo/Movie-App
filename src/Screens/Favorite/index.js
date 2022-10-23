@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import {View, Text, FlatList, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {useFavoritContext} from '../../context/FavoritContext';
@@ -47,9 +48,11 @@ export default function Favariate() {
       </View>
       <FlatList
         data={favorite}
+        style={{marginHorizontal: 20}}
         renderItem={({item}) => renderItem2({item, setFavorite})}
         // pagingEnabled
-        horizontal
+        // horizontal
+        numColumns={2}
         showsHorizontalScrollIndicator={false}
       />
     </View>
