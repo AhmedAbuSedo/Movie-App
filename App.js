@@ -6,8 +6,8 @@ import Login from './src/Screens/Login';
 export default function App() {
   return (
     <FavoirtProvider>
-      {/* <AppContainer /> */}
-      <Login />
+      <AppContainer />
+      {/* <Login /> */}
     </FavoirtProvider>
   );
 }
